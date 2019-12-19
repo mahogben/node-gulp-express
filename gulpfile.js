@@ -5,8 +5,8 @@ const nodemon = require('gulp-nodemon');
 
 gulp.task('serve', function() {
     nodemon({
-        script: 'app.js',
-        ext: 'js handlebars coffee',
+        script: 'bin/www',
+        ext: 'js handlebars',
         env: {
             NODE_ENV: 'dev',
             PORT: 9090

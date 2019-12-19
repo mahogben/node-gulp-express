@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+// get main app
+const app = require('../app').app;
+const server = require('../app').server;
+
+// start express server
+server.listen(app.get('port'));
+console.log('%s: Node server started on %s ...', Date(Date.now()), app.get('port'));
